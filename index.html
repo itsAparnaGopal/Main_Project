@@ -1,0 +1,53 @@
+<html lang = "en">
+<head>
+    <title>Salary Prediction</title>
+    <link rel = "stylesheet" href = "/static/css/style.css">
+</head><body>
+
+<!-- Input Form-->
+<div class= "login">
+    <h1 id="heading">Predict your Salary!!!</h1>
+    
+    
+    <form action ="/prediction" method="post" id="input head">
+        <h3 id="input">Age</h3> 
+        <input type="text" name="Age" placeholder="Age">
+        <h3 id="input">Base pay</h3>
+        <input type="text" name="Base_pay" placeholder="Base pay">
+        <h3 id="input">Enter the period employed (in months)</h3>
+        <input type="text" name="Months" placeholder="Months">
+        <h3 id="input">Total Sales done </h3>
+        <input type="text" name="Total_Sales" placeholder="Total Sales">
+        <h3 id="input">Volume </h3>
+        <input type="text" name="Volume" placeholder="Volume">
+        <h3 id="input">openingbalance </h3>
+        <input type="text" name="openingbalance" placeholder="openingbalance">
+        <h3 id="input">closingbalance </h3>
+        <input type="text" name="closingbalance" placeholder="closingbalance">
+        <h3 id="input">Gender </h3>
+        <select id="Gender" name="Gender">
+            <option value='Female'>Female</option>
+            <option value='Male'>Male</option>
+        </select>
+        <h3 id="input">Type of contract </h3>
+        <select id="Type" name="Type">
+            <option value='One-year'>One year</option>
+            <option value='Two-year'>Two year</option>
+            <option value='Month-to-month'>Month-to-month</option>
+
+        </select>
+        <h3 id="input">Education </h3>
+        <select id="Education" name="Education">
+            <option value='High-School'>High School or less</option>
+            <option value='Intermediate'>Intermediate</option>
+            <option value='Graduation'>Graduation</option>
+            <option value='PG'>PG</option>
+        </select>
+        <br>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
